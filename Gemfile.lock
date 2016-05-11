@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    humanize (1.1.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  humanize
+
+BUNDLED WITH
+   1.12.3

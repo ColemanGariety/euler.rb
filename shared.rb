@@ -7,7 +7,7 @@ module Shared
     end
   end
 
-  def prime_by_trial_division?(n)
+  def self.prime_by_trial_division?(n)
     if n.even?
       return n == 2
     else
@@ -15,7 +15,11 @@ module Shared
     end
   end
 
-  def palindrome(x)
+  def self.palindrome?(x)
     x.to_s.reverse == x.to_s
+  end
+
+  def self.sum_digits(n)
+    n.to_s.each_char.map {|c| c.to_i }.reduce(:+)
   end
 end
